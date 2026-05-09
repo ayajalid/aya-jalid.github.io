@@ -6,7 +6,7 @@
   --text:  #1a1a18;
   --muted: #7a7a72;
   --line:  #e0ddd8;
-  --bg:    #fafaf7;
+  --bg:    #ffffff;
   --warm:  #ede9e0;
   --cool:  #dfe2e8;
   --accent:#b89a6a;
@@ -263,6 +263,17 @@ footer a { color:inherit; text-decoration:none; }
   .about-photo-wrap { position:static; }
   .cv-inner { flex-direction:column; gap:2rem; align-items:flex-start; }
   .contact-row { flex-direction:column; gap:1.5rem; align-items:flex-start; }
-  .block-2col, .block-aside, .block-aside-r, .block-3col { grid-template-columns:1fr; gap:2rem; }
+  .block-2col, .block-aside, .block-aside-r, .block-3col, .block-aside-espace { grid-template-columns:1fr; gap:2rem; }
   footer { padding:1.5rem; flex-direction:column; gap:.5rem; }
+  .img-tel { width:100% !important; }
+  /* Nav prev/next */
+  .proj-nav { flex-direction:column; gap:1.5rem; }
+
+  /* Hero grille inline → 1 colonne */
+  .proj-hero-inner > div[style*="grid"] {
+    display:flex !important;
+    flex-direction:column !important;
+    max-height:none !important;
+    gap:2rem !important;
+  }
 }
